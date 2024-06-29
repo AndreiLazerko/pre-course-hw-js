@@ -6,11 +6,14 @@ let passportWithAddress = {
       city: "LA"
   }
 };
-console.log(passportWithAddress);
-passportWithAddress.address.city = 'Bobryisk';
 
 let newpassportWithAddress = {
-  ...passportWithAddress
+  ...passportWithAddress,
+  address:{
+    country: "USA",
+    city: 'Bobryisk'
+  }
 }
-
+console.log(passportWithAddress);
 console.log(newpassportWithAddress);
+
